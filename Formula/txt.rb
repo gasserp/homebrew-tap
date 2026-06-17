@@ -7,11 +7,11 @@ class Txt < Formula
   on_macos do
     on_arm do
       url "https://github.com/gasserp/textory-tools/releases/download/cli-v#{version}/txt-darwin-arm64.tar.gz"
-      sha256 "09670012fe01b6959d41532026d87560b4288b187ea35b8f47abb989db791010"
+      sha256 "f8e21dea4d14e1c95a3d772dc4af0bf083bf255fa17bdf68f7ebad9bee80fbd3"
     end
     on_intel do
       url "https://github.com/gasserp/textory-tools/releases/download/cli-v#{version}/txt-darwin-amd64.tar.gz"
-      sha256 "1506ab822a508f2c20dd214e2c5a2019679b94cb75fa9968b386d43cb8e6cb4b"
+      sha256 "8e31bc16852d71ae7f9922052ac93d858d92a497418dd60930debf4b5f0d847e"
     end
   end
 
