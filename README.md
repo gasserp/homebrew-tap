@@ -1,25 +1,43 @@
 # gasserp/homebrew-tap
 
-Homebrew tap for [Textory](https://textory.dev).
+Homebrew tap for [Textory](https://textory.dev) — a fast, console-style snippet manager for macOS. Source lives in [gasserp/textory-tools](https://github.com/gasserp/textory-tools).
+
+## What's in this tap
+
+| Formula / Cask | Description |
+|---|---|
+| `textory` (cask) | The Textory.app — native macOS app |
+| `txt` (formula) | CLI tool for pushing snippets from the terminal |
 
 ## Install
+
+### Textory app
 
 ```bash
 brew install --cask gasserp/tap/textory
 ```
 
-The `Textory.app` is signed and notarized, so it installs without Gatekeeper
-warnings.
+Signed and notarized — no Gatekeeper warnings.
+
+### `txt` CLI
+
+```bash
+brew install gasserp/tap/txt
+```
+
+Then push snippets straight from your terminal:
+
+```bash
+txt "some text you want to save"
+```
 
 ## Update
 
 ```bash
 brew upgrade --cask textory
+brew upgrade txt
 ```
 
-## Notes
+## Requirements
 
-The `textory` cask is updated automatically by the
-[`apple-release.yml`](https://github.com/gasserp/textory-tools/blob/main/.github/workflows/apple-release.yml)
-workflow in `gasserp/textory-tools` whenever an `apple-v*` tag is pushed — the
-`version` and `sha256` here are bumped by CI, so edit them there, not by hand.
+- macOS Sonoma (14) or later
