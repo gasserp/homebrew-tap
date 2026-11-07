@@ -1,6 +1,6 @@
 cask "textory" do
-  version "1.1.0"
-  sha256 "95f5d11925f2402193148b9f58ae8139e03968aa84f8f603431b41a9c4d91e0b"
+  version "1.2.0"
+  sha256 "1488cbc97621fca7d1f1455eca8536c6a735cbd913ed4846b4acbf48fb980b2d"
 
   url "https://github.com/gasserp/textory-tools/releases/download/apple-v#{version}/Textory-macOS.zip"
   name "Textory"
